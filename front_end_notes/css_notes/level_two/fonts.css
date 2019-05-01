@@ -1,0 +1,22 @@
+/* Font Notes */
+
+/* Font names can be passed in as a string */
+
+/* Not all fonts available on every OS */
+
+/* Browser font size default is 16px */
+
+/* em is a ratio to the parent element */
+/* example */
+
+body {
+    font-size: 20px;
+}
+
+#two {
+    font-size: 2.0em;
+}
+
+/* #two is twice the size of body */
+
+/* font-weight is boldness of text */
