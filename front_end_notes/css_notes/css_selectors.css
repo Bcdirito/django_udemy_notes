@@ -1,0 +1,19 @@
+/* * -> asterisk calls override everything except for ids */
+
+/* adjacent siblings selector */
+/* elements next to each other */
+/* example */
+
+h3 + ul {
+    border: 4px dotted purple;
+}
+
+/* with border you can do thickness, style, and color all in one line */
+
+/* affecting anchor with specific link */
+/* example */
+
+a[href="www.website.org"] {
+    color: blue;
+    border: 5px solid orange;
+}
