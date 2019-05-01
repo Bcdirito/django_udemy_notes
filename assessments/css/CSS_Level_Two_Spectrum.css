@@ -1,0 +1,39 @@
+h1 {
+  text-align: center;
+  font-family: 'Artifika', serif;
+  margin-top: 2%;
+}
+
+.blocks {
+  margin: auto;
+  width: 60%;
+  padding: 1% 5% 1% 5%;
+}
+
+tr {
+  height: 400px;
+}
+
+td {
+  border: 5px solid white;
+}
+
+#blockone {
+  background-color: #caa8f5
+}
+
+#blocktwo {
+  background-color: #9984d4
+}
+
+#blockthree {
+  background-color: #592e83
+}
+
+#blockfour {
+  background-color: #230c33
+}
+
+#blockfive {
+  background-color: #b27c66
+}
