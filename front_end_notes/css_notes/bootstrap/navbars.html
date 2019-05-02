@@ -1,0 +1,50 @@
+<!-- Navbar Notes -->
+
+<!-- JQuery and JavaScript required to make a navbar work -->
+
+<!-- Example -->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a href="#" class="navbar-brand">Company</a>
+        </div>
+
+        <ul class="nav navbar-nav">
+            <li><a href="#">Item One</a></li>
+            <li><a href="#">Item Two</a></li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">On the Right!</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Wrapping the navbar internally with a container class helps with flexbox -->
+<!-- To make a burger menu example -->
+
+<nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse">
+    
+                <span class="sr-only">Toggle Navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </div>
+    
+            <a class="navbar-brand" href="#">Brand</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+           <ul class="nav navbar-nav">
+               <li><a href="#">link</a></li>
+               <li><a href="#">link</a></li>
+               <li><a href="#">link</a></li>
+           </ul> 
+        </div>
+    </nav>
+
+    <!-- To make a navbar dropdown work -->
+    <!-- Copy from CDN to make it work -->
