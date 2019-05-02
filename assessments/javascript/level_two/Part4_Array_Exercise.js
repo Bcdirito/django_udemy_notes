@@ -44,7 +44,7 @@ function displayStudents() {
         })
 
         alert("Please check the console for to view the students")
-        
+
     } else alert("No students enrolled! Please add to the roster.")
 }
 
@@ -55,12 +55,12 @@ function displayStudents() {
 let start = prompt("Would you like to start the roster web app? (y/n)")
 
 if (start === "y"){
-    let command = prompt("Would you like to add, remove, display, or quit?")
+    let command = prompt("Would you like to add, remove, display, or quit?").toLowerCase()
     while (command !== "quit"){
         if (command === "add") addStudent()
         else if (command === "remove") removeStudent()
         else if (command === "display") displayStudents()
 
-        command = prompt("Would you like to add, remove, display, or quit?")
+        command = prompt("Would you like to add, remove, display, or quit?").toLowerCase()
     }
 }
