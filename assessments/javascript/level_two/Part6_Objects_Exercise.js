@@ -10,12 +10,7 @@ var employee = {
   job: "Programmer",
   age: 31,
   nameLength: function() {
-    let total = 0
-    this.name.split("").forEach(s => {
-      if (s.match(/[a-zA-Z]/g)) total += 1
-    })
-
-    return total
+    console.log(this.name.length)
   }
 }
 
@@ -45,7 +40,7 @@ function employeeAlert(employee){
     finalArr.push(`${capitalKey} is ${employee[key]}`)
   }
 
-  return finalArr.join(", ") + "."
+  alert(finalArr.join(", ") + ".")
 }
 
 
@@ -60,7 +55,7 @@ var employee = {
   age: 31,
   lastName: function() {
     let nameArr = this.name.split(" ")
-    return nameArr[nameArr.length-1]
+    console.log(nameArr[nameArr.length-1])
   }
 }
 
