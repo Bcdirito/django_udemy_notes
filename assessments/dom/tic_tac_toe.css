@@ -1,0 +1,15 @@
+tr, td {
+    border: 5px solid black;
+    width: 150px;
+    height: 150px;
+}
+
+table {
+    margin: auto
+}
+
+td {
+    margin: auto;
+    font-size: 100px;
+    text-align: center;
+}
