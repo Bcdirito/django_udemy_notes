@@ -4,22 +4,28 @@ const cells = Array.from(document.getElementsByClassName("cell"))
 let store = ""
 
 reset.addEventListener("click", () => {
-    cells.forEach(cell => {
-        cell.innerHTML = ""
-    })
-
+    clearSquares()
     store = ""
 })
 
 board.addEventListener("click", (e) => {
-    if (e.target.innerHTML === ""){
+    fillSquare(e)
+})
+
+function clearSquares() {
+    cells.forEach(cell => {
+        cell.innerHTML = ""
+    })
+}
+
+function fillSquare(event) {
+    if (event.target.innerHTML === ""){
         if (store === "O" || store === "") {
-            e.target.innerHTML = "X"
+            event.target.innerHTML = "X"
             store = "X"
         } else {
-            e.target.innerHTML = "O"
+            event.target.innerHTML = "O"
             store = "O"
         }
     }
-})
-
+}
