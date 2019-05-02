@@ -10,4 +10,4 @@ if (firstName[0].toLowerCase() === lastName[0].toLowerCase()){
             console.log("I see u spyin'")
         }
     }
-} else alert("Mmmm...nevermind")
+}
