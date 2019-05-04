@@ -28,7 +28,7 @@ print(s[1:4])
 print(s[4:])
 
 # Bonus: Use indexing to reverse the string
-print(s[-1::-1])
+print(s[::-1])
 
 ###############
 ## Problem 2 ##
