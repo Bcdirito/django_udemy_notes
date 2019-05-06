@@ -23,19 +23,26 @@
 
 # Try to figure out what this code is doing and how it might be useful to you
 import random
-digits = list(range(10))
-random.shuffle(digits)
-winning_num = digits[:3]
-# print(winning_num)
 
-def num_checker(comp_num):
+def get_computer_num():
+    digits = list(range(10))
+    random.shuffle(digits)
+    return digits[:3]
+
+def get_user_num():
+    user_guess = input("What is your guess? ")
+    return list(user_guess)
+
+def num_checker():
     matches = 0
+    comp_num = get_computer_num()
     
     while matches < 3:
-        user_guess = input("What is your guess? ")
-        user_num = list(user_guess)
         matches = 0
         found = 0
+        
+        user_num = get_user_num()
+
         for i in range(len(comp_num)):
             if comp_num[i] == int(user_num[i]):
                 matches += 1
@@ -53,6 +60,6 @@ def num_checker(comp_num):
 
     
 
-print(num_checker(winning_num))
+print(num_checker())
 # Think about how you will compare the input to the random number, what format
 # should they be in? Maybe some sort of sequence? Watch the Lecture video for more hints!
