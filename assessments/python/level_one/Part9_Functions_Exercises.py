@@ -22,14 +22,12 @@
 
 def arrayCheck(nums):
   # CODE GOES HERE
-  counter = -1
 
-  for n in nums:
-    counter += 1
-    if (n == 1) and (nums[counter + 1] == 2) and (nums[counter + 2] == 3):
+  for i in range(len(nums) - 2):
+    if nums[i] and nums[i + 1] == 2 and (nums[i + 2] == 3):
       return True
-    elif counter >= len(nums) - 3:
-      return False
+  
+  return False
 
 #####################
 ## -- PROBLEM 2 -- ##
@@ -46,8 +44,7 @@ def arrayCheck(nums):
 
 def stringBits(string):
   # CODE GOES HERE
-  return (string[0::2])
-
+  return (string[::2])
 
 #####################
 ## -- PROBLEM 3 -- ##
@@ -93,8 +90,7 @@ def doubleChar(string):
   double_str = ""
 
   for s in string:
-    double_str += s
-    double_str += s
+    double_str += s*2
 
   return double_str
 
@@ -128,7 +124,7 @@ def no_teen_sum(*args):
   return final_num
 
 def fix_teen(num):
-  teens = list(range(10, 20))
+  teens = list(range(13, 20))
   if num in teens and (num != 15 or num != 16):
     return 0
   else:
