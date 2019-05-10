@@ -21,5 +21,5 @@
 # manage.py:
 # Associated with many of the command
 
-# To start server -> input python relative_file_path runserver
+# To start server -> input python directory_name/manage.py runserver
 
