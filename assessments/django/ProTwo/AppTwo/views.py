@@ -9,4 +9,5 @@ def help(request):
     help_heading = {
         "heading": "THIS IS THE HELP PAGE!"
     }
-    return render(request, "help.html", context=help_heading)
+
+    return render(request, "app_two/help.html", context=help_heading)
