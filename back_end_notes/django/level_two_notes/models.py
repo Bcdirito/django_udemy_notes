@@ -33,3 +33,12 @@ from app.models import Model1, Model2
 # Creating a superuser -> python manage.py createsuperuser
 # Then input name, email, and password
 
+# Part Two/Creating Models:
+
+# In Django 2, ForeginKey models require on_delete=models.CASCADE
+
+# To open shell console input python manage.py shell
+
+# To work with an object -> from directory_name.models import Model
+
+# To create a new instance -> same as Rails
