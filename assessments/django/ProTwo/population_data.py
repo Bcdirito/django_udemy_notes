@@ -13,7 +13,7 @@ faker_gen = Faker()
 def add_user():
     split_name = faker_gen.name().split()
     email = faker_gen.email()
-    u = User.objects.get_or_create(first_name=split_name[0], last_name=split_name[1], email=faker_gen.email)[0]
+    u = User.objects.get_or_create(first_name=split_name[0], last_name=split_name[1], email=email)[0]
     u.save()
     return u
 
