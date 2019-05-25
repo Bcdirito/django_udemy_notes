@@ -134,3 +134,5 @@ STATICFILES_DIR = [STATIC_DIR]
 
 MEDIA_ROOT = MEDIA_DIR
 MEDIA_URL = "/media/"
+
+LOGIN_URL = "/level_five_app/user_login/"

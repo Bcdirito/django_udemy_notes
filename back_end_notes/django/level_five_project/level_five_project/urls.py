@@ -20,5 +20,6 @@ from level_five_app import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("", views.index, name="index"),
-    path("level_five_app/", include("level_five_app.urls"))
+    path("level_five_app/", include("level_five_app.urls")),
+    path("logout", views.user_logout, name="logout")
 ]
