@@ -20,11 +20,15 @@ class IndexView(TemplateView):
 
 class SchoolListView(ListView):
     model = models.School
+     # returns school_list -> list of school objects
+
+    context_object_name = "schools"
     template_name = "cbv_app/school_list.html"
 
 
 class SchoolDetailView(DetailView):
     model = models.School
+    context_object_name = "school_detail"
     template_name = "cbv_app/school_detail.html"
 
 
